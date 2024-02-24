@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="dheeru rajpoot Portfolio, dheeru rajpoot, dheeru portfolio, dheeru rajpoot website, dheeru rajpoot resume">
+    <meta name="description" content="Transforming digital dreams into functional realities, I am a web developer fluent in the languages of the internet &#8208; HTML, CSS, Tailwind, JavaScript, Basic C,C++, Basic Python.">
+    <meta name="robots" content="index">
+    <title>Dheeru Rajpoot - Web Developer and Blogger</title>
+    <!-- favicon here  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <!-- favicon end here  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media screen and (max-width: 400px){
+            .skill-container{
+                width: 150px;
+            }
+            .skill-container p{
+                font-size: 14px;
+            }
+            .skill-container img{
+                margin-right: 6px;
+            }
+        }
+        @media only screen and (max-width: 400px) and (min-width: 350px)  {
+            .skill-container{
+                width: 130px;
+            }
+            .skill-container p{
+                font-size: 12px;
+            }
+            .skill-container img{
+                margin-right: 6px;
+                width: 30px;
+            }
+            .hire-me{
+                padding: 10px 20px;
+            }
+            .download-resume{
+                padding: 10px;
+            }
+            .social-icon a{
+                margin-inline-start: 5px;
+            }
+            .about-branding{
+                display: block;
+            }
+            .wp-project-container{
+                width: 140px;
+            }
+            .hamburger{
+                font-size: 25px;
+                padding: 0 10px;
+            }
+            .mobile-logo{
+                margin-left: 0px;
+                width: 200px;
+                height: auto;
+            }
+            .button{
+                padding: 10px 25px;
+            }
+            .main-logo{
+                width: 200px;
+                height: auto;
+            }
+        }
+        @media only screen and (max-width: 1500px) and (min-width: 1150px){
+            .banner-main{
+                gap: 10rem;
+            }
+            .banner-img{
+                width: 350px;
+                margin-top: 30px;
+            }
+            .banner-section{
+                width: 450px;
+            }
+            .banner-h1{
+                font-size: 55px;
+            }
+            .about-img{
+                width: 350px;
+            }
+            .about-main{
+                width: 450px;
+            }
+            .about-container{
+                gap: 10rem;
+            }
+            .skill-text{
+                width: 350px;
+            }
+            #skills{
+                gap: 5rem;
+            }
+            .skills{
+                width: 600px;
+            }
+            .skill-container{
+                width: 165px;
+            }
+            .skill-container p{
+                font-size: 15px;
+            }
+            .skill-container img{
+                margin-right: 5px;
+            }
+            .wp-project-container{
+                width: 250px;
+            }
+            .wp-project-container p{
+                font-size: 1rem;
+            }
+        }
+
+        
+    </style>
+</head>
+<body class="bg-[#131313]">
+    <header class="flex w-full h-20 fixed top-0 z-20 bg-[#1f1f1f] items-center justify-between flex-wrap flex-row">
+        <a href="index.html"><img class="main-logo w-60 h-12 ml-7" src="images/logo.jpeg" alt="Dheeru Rajpoot Logo"></a>
+        <div class=" hidden md:block">
+            <ul class="flex text-white" >
+                <a href="./index.html"><li class="mx-4 hover:text-[#c8f31d]">Home</li></a>
+                <a href="#about"><li class="mx-6 hover:text-[#c8f31d]">About</li></a>
+                <a href="#resume"><li class="mx-6 hover:text-[#c8f31d]">Resume</li></a>
+                <a href="#skills"><li class="mx-6 hover:text-[#c8f31d]">Skills</li></a>
+                <a href="#contact"><li class="mx-6 hover:text-[#c8f31d]">contact</li></a>
+            </ul>
+        </div>
+        <div class="flex mr-7 items-center text-white">
+            <a class="mr-8 hover:text-[#c8f31d] hidden md:block" href="#">LET'S TALK</a>
+            <span class="hamburger text-4xl bg-[#c8f31d] px-[10px] py-[6px] pt-[2px] cursor-pointer hover:bg-black hover:text-white text-slate-600 rounded-[50%]" id="open">&#9776;</span>
+        </div>
+    </header>
+
+    <!-- hamburger menu start here  -->
+    <div id="menu" class="md:w-[430px] w-[100%] h-full hidden z-40  fixed right-0 top-0 bg-[#1f1f1f]">
+        <div class="mt-7 mx-10 transition ease-in duration-700">
+            <div class="flex items-center justify-between">
+                <a href="index.html"><img class="mobile-logo w-60 h-12 ml-5" src="images/logo.jpeg" alt="Dheeru Rajpoot Logo"></a>
+                <span id="close" class="text-white text-3xl cursor-pointer">&#x2715;</span> 
+            </div>
+            <p class="text-white text-xl font-bold my-7">Quick Link</p>
+                <ul class="flex flex-wrap flex-row text-white mb-6" >
+                    <!-- <a href="#"><li class="mx-2 hover:text-[#c8f31d]">Home</li></a> -->
+                    <a href="#about"><li class="mx-3 hover:text-[#c8f31d]">About</li></a>
+                    <a href="#resume"><li class="mx-3 hover:text-[#c8f31d]">Resume</li></a>
+                    <a href="#skills"><li class="mx-3 hover:text-[#c8f31d]">Skills</li></a>
+                    <a href="#contact"><li class="mx-3 hover:text-[#c8f31d]">contact</li></a>
+                </ul>
+            <h2 class="text-white font-medium text-2xl">Professional <span class="text-[#c8f31d]">Problem Solution </span> <br>for Web Development</h2>
+            <p class="text-gray-400 my-7">I am very excited to do new projects, <br> You see your dreams and we will full fill your dreams.</p>
+            <div>
+                <p class="text-white text-xl font-bold  my-7">Address</p>
+                <div class="flex mb-2">
+                    <i class="fa-solid fa-location-dot text-[#c8f31d] text-2xl mr-5"></i>
+                    <p class="text-gray-400">35 Nonar Shahpur Pawanr, Mallawan, Hardoi</p>
+                </div>
+                <div class="flex mb-4">
+                    <i class="fa-solid fa-envelope text-[#c8f31d] text-2xl mr-5"></i>
+                    <p class="text-gray-400">support@evtn.org</p>
+                </div>
+                <div class="flex mb-5">
+                    <i class="fa-solid fa-phone-flip text-[#c8f31d] text-2xl mr-5"></i>
+                    <p class="text-gray-400">+91-9026315148</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="700" class="pt-3">
+                <p class="text-white text-xl font-bold  my-7">Follow Me On!</p>
+                <a href="https://facebook.com/dheerurajpootofficial" class="md:text-2xl text-lg text-gray-700 p-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-facebook"></i></i></a>
+                <a href="https://twitter.com/DheeruRajpoot3" class="md:text-2xl text-lg text-gray-700 p-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/dheeru_rajpoot_/" class="md:text-2xl text-lg text-gray-700 p-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dheerurajpoot/" class="md:text-2xl text-lg text-gray-700 p-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.hackerrank.com/profile/dheerurajpoot" class="md:text-2xl text-lg text-gray-700 p-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-hackerrank"></i></a>
+                <a href="https://github.com/dheerurajpoot" class="md:text-2xl text-lg text-gray-700 p-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner section start here  -->
+    <section class="banner-main flex px-5 flex-wrap justify-center items-center md:gap-[20rem] mt-32">
+        <div class="w-[500px] banner-section">
+            <p class="md:text-5xl text-3xl text-gray-400">Hello, i’m</p>
+            <h1 class="banner-h1 md:text-6xl text-4xl my-5 text-[#c8f31d] font-black">Dheeru Rajpoot</h1>
+            <h2 class="md:text-5xl text-3xl mb-10 text-white">Web Developer</h2>
+            <p class=" text-gray-400">Transforming digital dreams into functional realities, I am a web developer fluent in the languages of the internet &#8208; HTML, CSS, JavaScript, Tailwind, Basic C/C++ and Basic Python.</p>
+            <div data-aos="fade-up" data-aos-duration="700" class="mt-10 mb-10">
+                <a class="hire-me px-9 py-4 bg-[#c3f81d] hover:bg-black hover:text-white rounded-2xl font-semibold border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" href="#contact">Hire Me &gt;</a>
+                <a class="download-resume text-white md:mx-10 mx-2 py-4 md:px-5 px-4 rounded-2xl border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" download="resume" href="./images/RESUME.pdf">Download Resume</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="700" class="social-icon pt-8">
+                <a href="https://facebook.com/dheerurajpootofficial" class="md:text-2xl text-lg text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-facebook"></i></i></a>
+                <a href="https://twitter.com/DheeruRajpoot3" class="md:text-2xl text-lg text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/dheeru_rajpoot_/" class="md:text-2xl text-lg text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dheerurajpoot/" class="md:text-2xl text-lg text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.hackerrank.com/profile/dheerurajpoot" class="md:text-2xl text-lg text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-hackerrank"></i></a>
+                <a href="https://github.com/dheerurajpoot" class="md:text-2xl text-lg text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <img data-aos="zoom-out" data-aos-duration="700" class=" banner-img w-[450px] h-auto rounded-3xl mt-14" src="images/banner.png" alt="dheeru rajpoot banner">
+    </section>
+    <!-- banner section end here  -->
+
+    <!-- about me section start here  -->
+    <section id="about" class="about-container bg-black md:mx-7 px-5 py-6 mt-14 flex md:py-20 items-center justify-center flex-wrap flex-row-reverse md:gap-[15rem]">
+        <div class="about-main w-[500px] mt-10">
+            <p class="text-gray-400">About Me</p>
+            <h2 class="text-white font-bold md:text-5xl text-3xl my-5">Professional <span class="text-[#c8f31d]">Problem Solution </span> for Web Development</h2>
+            <p class="text-gray-400 mt-9">Hi there! I'm a web developer who turns ideas into interactive reality using HTML, CSS, Tailwind and JavaScript. I make stunning interfaces with Tailwind CSS and build strong web apps with a mix of C and HTML. My code isn't just text; it's a dance of structure, style, and dynamics. I specialize in making websites look great on any device, always staying up-to-date with the latest in web development. Let's create something awesome together!</p>
+            <div class="about-branding flex md:gap-10 gap-5 mt-8">
+                <ul>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-[#c8f31d] mr-3 md:text-2xl text-base fa-solid fa-check"></i><span class="text-white">Branding & Design</span></li>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-[#c8f31d] mr-3 md:text-2xl text-base fa-solid fa-check"></i><span class="text-white">Web Development</span></li>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-[#c8f31d] mr-3 md:text-2xl text-base fa-solid fa-check"></i><span class="text-white">Wordpress Development</span></li>
+                </ul>
+                <ul>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-[#c8f31d] mr-3 md:text-2xl text-base fa-solid fa-check"></i><span class="text-white">Digital Marketing</span></li>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-[#c8f31d] mr-3 md:text-2xl text-base fa-solid fa-check"></i><span class="text-white">Blogging</span></li>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-[#c8f31d] mr-3 md:text-2xl text-base fa-solid fa-check"></i><span class="text-white">Project Design</span></li>
+                </ul>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="700" class="flex flex-wrap gap-14 bg-[#1f1f1f] items-center justify-center rounded-2xl border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2 p-3 py-7 mt-7 mb-5">
+                <div class="flex gap-6 ">
+                    <span class="bg-[#c8f31d] hover:bg-black hover:text-white py-3 px-4 pt-4 rounded-[50%]"><i class="text-gray-500 text-xl fa-regular fa-envelope"></i></span>
+                    <div>
+                        <p class="text-gray-400">Email us</p>
+                        <p class="text-white text-xl">support@evtn.org</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <span class="bg-[#c8f31d] hover:bg-black hover:text-white py-3 px-4 pt-4 rounded-[50%]"><i class=" text-gray-500 text-xl fa-solid fa-phone-flip"></i></span>
+                    <div>
+                        <p class="text-gray-400">Make a Call</p>
+                        <p class="text-white text-xl">+91-9026315148</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img data-aos="fade-up" data-aos-duration="1000" class="about-img w-[450px] h-auto rounded-3xl mb-10 mt-10" src="images/card.png" alt="dheeru rajpoot banner">
+    </section>
+
+    <!-- my resume section start here  -->
+    <section id="resume" class="text-center">
+        <p class="text-gray-400 text-lg mt-8 md:mt-24">My Resume</p>
+        <h2 class="text-white text-3xl font-extrabold md:text-5xl">Real <span class="text-[#c8f31d]">Problem Solutions</span> Experience</h2>
+        <div>
+            <div class="bg-[#1f1f1f] flex flex-wrap justify-around text-center rounded-2xl mx-6 md:mx-40 mt-12 border-solid border-[1px] border-gray-700 border-opacity-70">
+                <div>
+                    <div class="flex items-center flex-wrap justify-center py-8">
+                        <div>
+                            <!-- <i class="fa-solid fa-arrow-right p-4 mr-6 rounded-[50%] -rotate-45 bg-[#c8f31d] text-black"></i> -->
+                        </div>
+                        <div>
+                            <p class="text-gray-400">2023 - Present</p>
+                            <h3 class="text-white text-xl my-5">Master in Computer Application</h3>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center py-8">
+                        <div>
+                            <!-- <i class="fa-solid fa-arrow-right p-4 mr-6 rounded-[50%] -rotate-45 bg-[#c8f31d] text-black"></i> -->
+                        </div>
+                        <div>
+                            <p class="text-gray-400">2019 - 2022</p>
+                            <h3 class="text-white text-xl my-5">Bachelors in Science</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:border-l-[1px] opacity-50 border-gray-400 my-6"></div>
+                <div>
+                    <div class="flex items-center justify-center py-8">
+                        <div>
+                            <!-- <i class="fa-solid fa-arrow-right p-4 mr-6 rounded-[50%] -rotate-45 bg-[#c8f31d] text-black"></i> -->
+                        </div>
+                        <div>
+                            <p class="text-gray-400">2017 - 2019</p>
+                            <h3 class="text-white text-xl my-5">Intermediate</h3>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center py-8">
+                        <div>
+                            <!-- <i class="fa-solid fa-arrow-right p-4 mr-6 rounded-[50%] -rotate-45 bg-[#c8f31d] text-black"></i> -->
+                        </div>
+                        <div>
+                            <p class="text-gray-400">2015 - 2017</p>
+                            <h3 class="text-white text-xl my-5">High School</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <!-- my skill section start here  -->
+    <section id="skills" class="bg-black md:mx-7 px-5 py-6 mt-14 mb-28 flex md:py-20 items-center justify-center flex-wrap md:gap-[12rem]">
+        <div class="skill-text w-[450px] mt-10">
+            <p class="text-gray-400">My Skill</p>
+            <h2 class="text-white font-extrabold md:text-5xl text-3xl my-5">Let&#8242;s Explore Popular <span class="text-[#c8f31d]">Skill & Experience </span></h2>
+            <p class="text-gray-400 mt-9 mb-12">Transforming digital dreams into functional realities, I am a web developer fluent in the languages of the internet &#8208; HTML, CSS, JavaScript, Tailwind, Basic C/C++ and Basic Python.</p>
+            <a data-aos="fade-up" data-aos-duration="700" class="button px-9 py-4 mt-8 bg-[#c3f81d] hover:bg-gray-800 hover:text-white rounded-2xl font-semibold border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" href="#contact">Contact &gt;</a>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="700" class="skills flex md:gap-7 gap-5 flex-wrap md:max-w-3xl pt-8 mb-10 mt-10 ml-3">
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2 ">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/html.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">html</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/css-3.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">CSS</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/tailwind.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">Tailwind</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/java-script.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">JS</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/python.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">Python</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/c-.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">C/C++</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/sql.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">SQL</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-4 mr-5" src="images/wordpress.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">Wordpress</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/seo.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">SEO</p>
+            </div>
+            <div class="skill-container bg-[#1f1f1f] md:hidden md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/blogger.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">Blogger</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- coding project section start here  -->
+    <!-- <section>
+        <div class="text-center">
+            <p class="text-gray-400 text-lg mt-8 mb-5 md:mt-24">My Projects</p>
+            <h2 class="text-white text-3xl font-extrabold md:text-5xl"> Real Life Projects <span class="text-[#c8f31d]">in Coding</span> and Experience</h2>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="700" class="flex md:gap-7 gap-5 justify-center items-center flex-wrap pt-8 mb-20 mt-10">
+            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2 ">
+                <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://evtn.org/wp-content/uploads/2023/02/EVTN-1-e1676865766675.png" alt="">
+                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://evtn.org">EVTN</a></p>
+            </div>
+            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="md:w-36 w-24 md:mb-5 mb-2" src="https://lesshopy.com/wp-content/uploads/2022/12/Price_less_quality_best__4_-removebg-preview-e1672406566353.png" alt="">
+                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://lesshopy.com/">Lesshopy</a></p>
+            </div>
+            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="md:w-14 w-11 md:mb-5 mb-2" src="images/tailwind.png" alt="">
+                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://drmahaveerdanigond.in/">Dr. Mahaveer Danigond</a></p>
+            </div>
+            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://dcitsolutions.org/wp-content/uploads/2023/04/DC-IT-Logo-Transparent-2.png" alt="">
+                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://dcitsolutions.org/">DC IT Solutions</a></p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- wordpress project section start here  -->
+    <section class="bg-[url('./images/projctbg.jpg')] bg-fixed bg-cover bg-no-repea">
+       <div class="bg-black bg-opacity-75">
+            <div class="text-center pt-5 ">
+                <p class="text-gray-400 text-lg mt-8 mb-5 md:mt-10">My Wordpress Projects</p>
+                <h2 class="text-white text-3xl font-extrabold md:text-5xl"> Real Life Projects <span class="text-[#c8f31d]">On Wordpress</span> <br> and Experience</h2>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="700" class="flex md:gap-7 gap-5 justify-center items-center flex-wrap pt-8 mb-20 pb-20 mt-10">
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2 ">
+                    <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://evtn.org/wp-content/uploads/2023/02/EVTN-1-e1676865766675.png" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://evtn.org">EVTN</a></p>
+                </div>
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <img class="md:w-36 w-24 md:mb-5 mb-2" src="images/lesshopy.jpeg" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://lesshopy.com/">Lesshopy</a></p>
+                </div>
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <img class="md:w-14 w-11 md:mb-5 mb-2" src="images/tailwind.png" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://drmahaveerdanigond.in/">Dr. Mahaveer Danigond</a></p>
+                </div>
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://dcitsolutions.org/wp-content/uploads/2023/04/DC-IT-Logo-Transparent-2.png" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://dcitsolutions.org/">DC IT Solutions</a></p>
+                </div>
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://hgdripirrigation.com/wp-content/uploads/2023/02/Drip-Irrigation-2-e1677315443311.png" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://hgdripirrigation.com/">HG Drip Irrigation</a></p>
+                </div>
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://sancare.co.in/wp-content/uploads/2023/07/suncare-1-e1689848528146.png" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://sancare.co.in/">Sancare</a></p>
+                </div>
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <img class="md:w-40 w-20 md:mb-5 mb-2" src="https://protechacademy.net/wp-content/uploads/2023/01/LOGO-2.png" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://protechacademy.net/">Protech Computer Academy</a></p>
+                </div>
+                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <img class="md:w-14 w-11 md:mb-5 mb-2" src="https://indiaatoday.com/wp-content/uploads/2023/11/Untitled-design-2-e1699769473137.png" alt="">
+                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://indiaatoday.com/">Indiaa Today</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- contact section start here  -->
+    <section id="contact" class="flex flex-wrap mx-7 justify-center md:gap-28 pb-16 items-center overflow-hidden">
+        <div>
+            <p class="text-gray-400">Get in Touch</p>
+            <h2 class="text-white font-extrabold md:text-5xl text-3xl my-5">Let&#8242;s Talk For your <br><span class="text-[#c8f31d]">Next Project </span></h2>
+            <p class="text-gray-400 mt-9">Ready to turn ideas into reality? Let's start the conversation! <br> Contact me for collaborations, projects, or any web-related queries. <br> Your next digital adventure begins here.</p>
+            <div class="mt-8">
+                <ul>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-slate-800 bg-[#c8f31d] p-[6px] rounded-[50%] mr-4 md:text-xl text-base fa-solid fa-check"></i><span class="text-white">5+ Years Of Wordpress Experience</span></li>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-slate-800 bg-[#c8f31d] p-[6px] rounded-[50%] mr-4 md:text-xl text-base fa-solid fa-check"></i><span class="text-white">Professional Web Designer</span></li>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-slate-800 bg-[#c8f31d] p-[6px] rounded-[50%] mr-4 md:text-xl text-base fa-solid fa-check"></i><span class="text-white">4+ Years Blogging Experience</span></li>
+                    <li class="mb-5 md:text-lg text-base"><i class="text-slate-800 bg-[#c8f31d] p-[6px] rounded-[50%] mr-4 md:text-xl text-base fa-solid fa-check"></i><span class="text-white">SEO and Digital Marketing</span></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <form class="flex flex-wrap flex-col mt-10" action="https://formspree.io/f/xgejjybn" method="POST">
+                <div>
+                    <div class="flex flex-wrap md:gap-8">
+                        <div class="flex flex-wrap flex-col">
+                            <label class="text-white my-3" for="name">Full Name :</label>
+                            <input class=" p-3 mb-4 rounded-xl bg-[#1f1f1f] text-white placeholder:text-slate-700 border-solid border-[1px] border-gray-700 border-opacity-70" type="name" name="username" id="name" autocomplete="off" required placeholder="Dheeru Rajpoot">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-white my-3" for="email">Email :</label>
+                            <input class=" p-3 mb-4 rounded-xl bg-[#1f1f1f] text-white placeholder:text-slate-700 border-solid border-[1px] border-gray-700 border-opacity-70" type="email" name="email" id="email" autocomplete="off" required placeholder="support@evtn.org">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap md:gap-8">
+                        <div class="flex flex-col">
+                            <label class="text-white my-3" for="number">Phone Number :</label>
+                            <input class=" p-3 mb-4 rounded-xl bg-[#1f1f1f] text-white placeholder:text-slate-700 border-solid border-[1px] border-gray-700 border-opacity-70" type="number" name="phone" id="number" autocomplete="off" required placeholder="+91-9026315148">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-white my-3" for="subject">Subject :</label>
+                            <input class=" p-3 mb-4 rounded-xl bg-[#1f1f1f] text-white placeholder:text-slate-700 border-solid border-[1px] border-gray-700 border-opacity-70" type="text" name="subject" id="subject" autocomplete="off" required placeholder="I would like to discuss">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-white my-3" for="message">Message :</label>
+                    <textarea class=" p-3 rounded-xl bg-[#1f1f1f] text-white placeholder:text-slate-700 border-solid border-[1px] border-gray-700 border-opacity-70" name="textarea" id="message" cols="" rows="5" autocomplete="off" required placeholder="Write Message"></textarea>
+                </div>
+                <input data-aos="fade-up" data-aos-duration="700" class="button px-9 py-4 w-60 mt-9 hover:bg-black hover:text-white bg-[#c3f81d] rounded-2xl font-semibold border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" type="submit" value="Send Us Message &gt;">
+            </form>
+        </div>
+    </section>
+
+    <div class="bg-[url('./images/bg.jpg')] bg-fixed bg-cover bg-no-repeat">
+        <section class="text-white p-4 flex bg-black bg-opacity-75 flex-col justify-center items-center text-center md:h-[550px] h-[450px] mt-11">
+            <h2 class="md:text-5xl text-3xl font-black">Are You Ready To Start</h2>
+            <h2 class="md:text-[65px] text-4xl my-6 font-black text-[#c8f31d]">New Project With Me?</h2>
+            <p class="mb-5">I am very excited to do new projects,  You see your dreams and we will full fill your dreams.</p>
+            <a class="button px-9 py-4 mt-5 text-gray-900 bg-[#c3f81d] hover:bg-black hover:text-white rounded-2xl font-semibold border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" href="#contact">Contact Me! &gt;</a>
+        </section>
+    </div>
+
+    <!-- footer section start here  -->
+    <footer>
+        <section class="flex flex-wrap md:flex-row flex-col justify-between items-center bg-black px-5 md:px-20 py-24">
+            <div>
+                <img class="w-60 h-12 rounded-lg" src="images/Dheeru.jpeg" alt="">
+                <p class="text-gray-400 mt-8">Let's stay connected! Reach out through <br> the form or connect with me on social media. <br> I'm always eager to engage with fellow web <br> enthusiasts and potential collaborators.</p>
+            </div>
+            <div>
+                <p class="text-white text-xl font-bold my-7 mx-5 mb-5">Quick Link</p>
+                <ul class="flex flex-wrap flex-row mb-5 text-white" >
+                    <!-- <a href="#"><li class="mx-4 hover:text-[#c8f31d]">Home</li></a> -->
+                    <a href="#"><li class="mx-4 hover:text-[#c8f31d]">About</li></a>
+                    <a href="#"><li class="mx-4 hover:text-[#c8f31d]">Services</li></a>
+                    <a href="#"><li class="mx-4 hover:text-[#c8f31d]">Portfolio</li></a>
+                    <a href="#"><li class="mx-4 hover:text-[#c8f31d]">contact</li></a>
+                </ul>
+                <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="700" class="social-icon pt-8 mb-6">
+                    <a href="https://facebook.com/dheerurajpootofficial" class="md:text-2xl text-base text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://twitter.com/DheeruRajpoot3" class="md:text-2xl text-base text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/dheeru_rajpoot_/" class="md:text-2xl text-base text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dheerurajpoot/" class="md:text-2xl text-base text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.hackerrank.com/profile/dheerurajpoot" class="md:text-2xl text-base text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://github.com/dheerurajpoot" class="md:text-2xl text-base text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div>
+                <p class="text-white text-xl font-bold  my-7">Address</p>
+                <div class="flex mb-4">
+                    <i class="fa-solid fa-location-dot text-[#c8f31d] text-2xl mr-5"></i>
+                    <p class="text-gray-400">35 Nonar Shahpur Pawanr, Mallawan, Hardoi</p>
+                </div>
+                <div class="flex mb-4">
+                    <i class="fa-solid fa-envelope text-[#c8f31d] text-2xl mr-5"></i>
+                    <p class="text-gray-400">support@evtn.org</p>
+                </div>
+                <div class="flex mb-5">
+                    <i class="fa-solid fa-phone-flip text-[#c8f31d] text-2xl mr-5"></i>
+                    <p class="text-gray-400">+91-9026315148</p>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-wrap md:justify-between justify-center items-center mx-2 md:mx-32 md:h-12 h-10">
+            <p class="text-gray-500">Copyright @2023</p>
+            <div class="text-gray-500 hidden md:block">
+                <a class="mx-2 md:mx-5" href="https://facebook.com/dheerurajpootofficial">Facebook</a>
+                <a class="mx-2 md:mx-5" href="https://twitter.com/DheeruRajpoot3">Twitter</a>
+                <a class="mx-2 md:mx-5" href="https://www.instagram.com/dheeru_rajpoot_/">Instagram</a>
+                <a class="mx-2 md:mx-5" href="https://www.linkedin.com/in/dheerurajpoot/">Linkedin</a>
+                <!-- <a class="mx-5" href="#">GitHub</a> -->
+                <!-- <a class="mx-5" href="#">Portfolio</a> -->
+            </div>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     <script>
+        let menu = document.querySelector('#menu')
+        let open = document.querySelector('#open')
+        let close = document.querySelector('#close')
+
+        close.addEventListener("click", closeMenu)
+        
+        function closeMenu(){
+            menu.style.display = 'none'
+        }
+
+        open.addEventListener("click", openMenu)
+        
+        function openMenu(){
+            menu.style.display = 'block'
+        }
+    </script>
+</body>
+</html>
