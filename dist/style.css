@@ -1,3 +1,202 @@
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  }
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #1f1f1f;
+    color: #c3f81d;
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {color: #c3f81d;}
+  
+  .coding-items{
+      height: 400px;
+      width: 300px;
+      padding: 30px;
+      text-align: center;
+  }
+  .coding-items h3{
+      margin-bottom: 10px;
+  }
+  .project-lesshopy{
+      background-image: url("/dist/images/lesshopybg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  }
+  .overlay{
+      position: absolute;
+      bottom: 0;
+      height: 350px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8); /* Black see-through */
+      color: #f1f1f1;
+      width: 100%;
+      transition: .5s ease;
+      opacity:0;
+      color: white;
+      font-size: 15px;
+      padding: 20px;
+      text-align: center;
+  }
+  .project-lesshopy:hover .overlay {
+       opacity: 1;
+  }
+  .gradient-generator{
+      background-image: url("/dist/images/gradient.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  }
+  .gradient-generator:hover .overlay {
+       opacity: 1;
+  }
+  .todos{
+      background-image: url("/dist/images/todos.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  }
+  .todos:hover .overlay {
+       opacity: 1;
+  }
+  .tictactoe{
+      background-image: url("/dist/images/tictactoe.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  }
+  .tictactoe:hover .overlay {
+       opacity: 1;
+  }
+  @media screen and (max-width: 400px){
+      .skill-container{
+          width: 150px;
+      }
+      .skill-container p{
+          font-size: 14px;
+      }
+      .skill-container img{
+          margin-right: 6px;
+      }
+  }
+  @media only screen and (max-width: 400px) and (min-width: 350px)  {
+      .skill-container{
+          width: 130px;
+      }
+      .skill-container p{
+          font-size: 12px;
+      }
+      .skill-container img{
+          margin-right: 6px;
+          width: 30px;
+      }
+      .hire-me{
+          padding: 10px 20px;
+      }
+      .download-resume{
+          padding: 10px;
+      }
+      .social-icon a{
+          margin-inline-start: 5px;
+      }
+      .about-branding{
+          display: block;
+      }
+      .wp-project-container{
+          width: 140px;
+      }
+      .hamburger{
+          font-size: 25px;
+          padding: 0 10px;
+      }
+      .mobile-logo{
+          margin-left: 0px;
+          width: 200px;
+          height: auto;
+      }
+      .button{
+          padding: 10px 25px;
+      }
+      .main-logo{
+          width: 200px;
+          height: auto;
+      }
+  }
+  @media only screen and (max-width: 1500px) and (min-width: 1150px){
+      .banner-main{
+          gap: 10rem;
+      }
+      .banner-img{
+          width: 350px;
+          margin-top: 30px;
+      }
+      .banner-section{
+          width: 450px;
+      }
+      .banner-h1{
+          font-size: 55px;
+      }
+      .about-img{
+          width: 350px;
+      }
+      .about-main{
+          width: 450px;
+      }
+      .about-container{
+          gap: 10rem;
+      }
+      .skill-text{
+          width: 350px;
+      }
+      #skills{
+          gap: 5rem;
+      }
+      .skills{
+          width: 600px;
+      }
+      .skill-container{
+          width: 165px;
+      }
+      .skill-container p{
+          font-size: 15px;
+      }
+      .skill-container img{
+          margin-right: 5px;
+      }
+      .wp-project-container{
+          width: 250px;
+      }
+      .wp-project-container p{
+          font-size: 1rem;
+      }
+  }
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */

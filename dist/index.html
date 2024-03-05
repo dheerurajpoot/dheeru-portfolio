@@ -15,112 +15,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        @media screen and (max-width: 400px){
-            .skill-container{
-                width: 150px;
-            }
-            .skill-container p{
-                font-size: 14px;
-            }
-            .skill-container img{
-                margin-right: 6px;
-            }
-        }
-        @media only screen and (max-width: 400px) and (min-width: 350px)  {
-            .skill-container{
-                width: 130px;
-            }
-            .skill-container p{
-                font-size: 12px;
-            }
-            .skill-container img{
-                margin-right: 6px;
-                width: 30px;
-            }
-            .hire-me{
-                padding: 10px 20px;
-            }
-            .download-resume{
-                padding: 10px;
-            }
-            .social-icon a{
-                margin-inline-start: 5px;
-            }
-            .about-branding{
-                display: block;
-            }
-            .wp-project-container{
-                width: 140px;
-            }
-            .hamburger{
-                font-size: 25px;
-                padding: 0 10px;
-            }
-            .mobile-logo{
-                margin-left: 0px;
-                width: 200px;
-                height: auto;
-            }
-            .button{
-                padding: 10px 25px;
-            }
-            .main-logo{
-                width: 200px;
-                height: auto;
-            }
-        }
-        @media only screen and (max-width: 1500px) and (min-width: 1150px){
-            .banner-main{
-                gap: 10rem;
-            }
-            .banner-img{
-                width: 350px;
-                margin-top: 30px;
-            }
-            .banner-section{
-                width: 450px;
-            }
-            .banner-h1{
-                font-size: 55px;
-            }
-            .about-img{
-                width: 350px;
-            }
-            .about-main{
-                width: 450px;
-            }
-            .about-container{
-                gap: 10rem;
-            }
-            .skill-text{
-                width: 350px;
-            }
-            #skills{
-                gap: 5rem;
-            }
-            .skills{
-                width: 600px;
-            }
-            .skill-container{
-                width: 165px;
-            }
-            .skill-container p{
-                font-size: 15px;
-            }
-            .skill-container img{
-                margin-right: 5px;
-            }
-            .wp-project-container{
-                width: 250px;
-            }
-            .wp-project-container p{
-                font-size: 1rem;
-            }
-        }
-
-        
-    </style>
 </head>
 <body class="bg-[#131313]">
     <header class="flex w-full h-20 fixed top-0 z-20 bg-[#1f1f1f] items-center justify-between flex-wrap flex-row">
@@ -131,7 +25,17 @@
                 <a href="#about"><li class="mx-6 hover:text-[#c8f31d]">About</li></a>
                 <a href="#resume"><li class="mx-6 hover:text-[#c8f31d]">Resume</li></a>
                 <a href="#skills"><li class="mx-6 hover:text-[#c8f31d]">Skills</li></a>
-                <a href="#contact"><li class="mx-6 hover:text-[#c8f31d]">contact</li></a>
+                <a href="#contact"><li class="mx-6 hover:text-[#c8f31d]">Contact</li></a>
+                <div class="dropdown mx-6">
+                    <button class="dropbtn">Projects &#9013;</button>
+                    <div class="dropdown-content">
+                      <a href="https://lesshopy.netlify.app/">Lesshopy</a>
+                      <a href="https://evtn.org/">EVTN</a>
+                      <a href="https://gradientgenerator.dheeru.org/">Gradient Generator</a>
+                      <a href="https://todos.dheeru.org/">Todos</a>
+                      <a href="https://tictactoe.dheeru.org/">Tic Tac Toe</a>
+                    </div>
+                  </div>
             </ul>
         </div>
         <div class="flex mr-7 items-center text-white">
@@ -161,11 +65,11 @@
                 <p class="text-white text-xl font-bold  my-7">Address</p>
                 <div class="flex mb-2">
                     <i class="fa-solid fa-location-dot text-[#c8f31d] text-2xl mr-5"></i>
-                    <p class="text-gray-400">35 Nonar Shahpur Pawanr, Mallawan, Hardoi</p>
+                    <p class="text-gray-400">35, Nonar, Shahpur Pawanr, Mallawan, Hardoi</p>
                 </div>
                 <div class="flex mb-4">
                     <i class="fa-solid fa-envelope text-[#c8f31d] text-2xl mr-5"></i>
-                    <p class="text-gray-400">support@evtn.org</p>
+                    <p class="text-gray-400">contact@dheeru.org</p>
                 </div>
                 <div class="flex mb-5">
                     <i class="fa-solid fa-phone-flip text-[#c8f31d] text-2xl mr-5"></i>
@@ -190,9 +94,9 @@
             <p class="md:text-5xl text-3xl text-gray-400">Hello, i’m</p>
             <h1 class="banner-h1 md:text-6xl text-4xl my-5 text-[#c8f31d] font-black">Dheeru Rajpoot</h1>
             <h2 class="md:text-5xl text-3xl mb-10 text-white">Web Developer</h2>
-            <p class=" text-gray-400">Transforming digital dreams into functional realities, I am a web developer fluent in the languages of the internet &#8208; HTML, CSS, JavaScript, Tailwind, Basic C/C++ and Basic Python.</p>
+            <p class=" text-gray-400">Transforming digital dreams into functional realities, I am a web developer fluent in the languages of the internet &#8208; HTML, CSS, JavaScript, Tailwind, ReactJS, NodeJS, ExpressJS and MongoDB</p>
             <div data-aos="fade-up" data-aos-duration="700" class="mt-10 mb-10">
-                <a class="hire-me px-9 py-4 bg-[#c3f81d] hover:bg-black hover:text-white rounded-2xl font-semibold border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" href="#contact">Hire Me &gt;</a>
+                <a class="hire-me px-9 py-4 bg-[#c3f81d] hover:bg-black hover:text-white rounded-2xl font-semibold border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" href="mailto:contact@dheeru.org">Hire Me &gt;</a>
                 <a class="download-resume text-white md:mx-10 mx-2 py-4 md:px-5 px-4 rounded-2xl border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" download="resume" href="./images/RESUME.pdf">Download Resume</a>
             </div>
             <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="700" class="social-icon pt-8">
@@ -204,7 +108,7 @@
                 <a href="https://github.com/dheerurajpoot" class="md:text-2xl text-lg text-gray-700 p-3 ms-3 bg-white hover:bg-[#c8f31d] rounded-xl"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
-        <img data-aos="zoom-out" data-aos-duration="700" class=" banner-img w-[450px] h-auto rounded-3xl mt-14" src="images/banner.png" alt="dheeru rajpoot banner">
+        <img data-aos="zoom-out" data-aos-duration="300" class=" banner-img w-[450px] h-auto rounded-3xl mt-14" src="images/banner.png" alt="dheeru rajpoot banner">
     </section>
     <!-- banner section end here  -->
 
@@ -213,7 +117,7 @@
         <div class="about-main w-[500px] mt-10">
             <p class="text-gray-400">About Me</p>
             <h2 class="text-white font-bold md:text-5xl text-3xl my-5">Professional <span class="text-[#c8f31d]">Problem Solution </span> for Web Development</h2>
-            <p class="text-gray-400 mt-9">Hi there! I'm a web developer who turns ideas into interactive reality using HTML, CSS, Tailwind and JavaScript. I make stunning interfaces with Tailwind CSS and build strong web apps with a mix of C and HTML. My code isn't just text; it's a dance of structure, style, and dynamics. I specialize in making websites look great on any device, always staying up-to-date with the latest in web development. Let's create something awesome together!</p>
+            <p class="text-gray-400 mt-9">Hi there! I'm a web developer who turns ideas into interactive reality using HTML, CSS, Tailwind and JavaScript. I make stunning interfaces with Tailwind CSS and build strong web apps with MERN Stack. My code isn't just text; it's a dance of structure, style, and dynamics. I specialize in making websites look great on any device, always staying up-to-date with the latest in web development. Let's create something awesome together!</p>
             <div class="about-branding flex md:gap-10 gap-5 mt-8">
                 <ul>
                     <li class="mb-5 md:text-lg text-base"><i class="text-[#c8f31d] mr-3 md:text-2xl text-base fa-solid fa-check"></i><span class="text-white">Branding & Design</span></li>
@@ -304,7 +208,7 @@
         <div class="skill-text w-[450px] mt-10">
             <p class="text-gray-400">My Skill</p>
             <h2 class="text-white font-extrabold md:text-5xl text-3xl my-5">Let&#8242;s Explore Popular <span class="text-[#c8f31d]">Skill & Experience </span></h2>
-            <p class="text-gray-400 mt-9 mb-12">Transforming digital dreams into functional realities, I am a web developer fluent in the languages of the internet &#8208; HTML, CSS, JavaScript, Tailwind, Basic C/C++ and Basic Python.</p>
+            <p class="text-gray-400 mt-9 mb-12">Transforming digital dreams into functional realities, I am a web developer fluent in the languages of the internet &#8208; HTML, CSS, JavaScript, Tailwind, ReactJS, NodeJS, ExpressJS and MongoDB.</p>
             <a data-aos="fade-up" data-aos-duration="700" class="button px-9 py-4 mt-8 bg-[#c3f81d] hover:bg-gray-800 hover:text-white rounded-2xl font-semibold border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2" href="#contact">Contact &gt;</a>
         </div>
         <div data-aos="fade-up" data-aos-duration="700" class="skills flex md:gap-7 gap-5 flex-wrap md:max-w-3xl pt-8 mb-10 mt-10 ml-3">
@@ -325,57 +229,77 @@
                 <p class="uppercase text-white md:text-xl text-base font-bold">JS</p>
             </div>
             <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/python.png" alt="">
-                <p class="uppercase text-white md:text-xl text-base font-bold">Python</p>
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/reactjs.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">ReactJS</p>
             </div>
             <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/c-.png" alt="">
-                <p class="uppercase text-white md:text-xl text-base font-bold">C/C++</p>
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/nodejs.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">NodeJS</p>
             </div>
             <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/sql.png" alt="">
-                <p class="uppercase text-white md:text-xl text-base font-bold">SQL</p>
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/mongodb.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">MongoDB</p>
             </div>
             <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="skill-img md:w-14 w-11 md:mr-4 mr-5" src="images/wordpress.png" alt="">
-                <p class="uppercase text-white md:text-xl text-base font-bold">Wordpress</p>
+                <img class="skill-img md:w-14 w-11 md:mr-4 mr-5" src="images/expressjs.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">ExpressJS</p>
             </div>
             <div class="skill-container bg-[#1f1f1f] md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/seo.png" alt="">
-                <p class="uppercase text-white md:text-xl text-base font-bold">SEO</p>
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/wordpress.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">WordPress</p>
             </div>
             <div class="skill-container bg-[#1f1f1f] md:hidden md:w-[200px] w-[170px] h-[100px] items-center flex justify-center rounded-2xl shadow border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/blogger.png" alt="">
-                <p class="uppercase text-white md:text-xl text-base font-bold">Blogger</p>
+                <img class="skill-img md:w-14 w-11 md:mr-7 mr-5" src="images/seo.png" alt="">
+                <p class="uppercase text-white md:text-xl text-base font-bold">SEO</p>
             </div>
         </div>
     </section>
 
     <!-- coding project section start here  -->
-    <!-- <section>
+    <section>
         <div class="text-center">
             <p class="text-gray-400 text-lg mt-8 mb-5 md:mt-24">My Projects</p>
             <h2 class="text-white text-3xl font-extrabold md:text-5xl"> Real Life Projects <span class="text-[#c8f31d]">in Coding</span> and Experience</h2>
         </div>
-        <div data-aos="fade-up" data-aos-duration="700" class="flex md:gap-7 gap-5 justify-center items-center flex-wrap pt-8 mb-20 mt-10">
-            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2 ">
-                <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://evtn.org/wp-content/uploads/2023/02/EVTN-1-e1676865766675.png" alt="">
-                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://evtn.org">EVTN</a></p>
+        <div data-aos="fade-up" data-aos-duration="700" class="coding-projects flex md:gap-7 gap-5 justify-center items-center flex-wrap pt-8 mb-20 mt-10">
+            <div class="text-center">
+                <div class="coding-items project-lesshopy mb-2 p-2 items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2 ">
+                    <div class="overlay">
+                        <h3 class="uppercase text-[#c8f31d] hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://lesshopy.netlify.app/">Lesshopy</a></h3>
+                        <p class="text-white ">Lesshopy is a modern E-Commerce web application built with cutting-edge technologies such as ReactJS, ExpressJS, NodeJS, MongoDB, and Redux Toolkit. With its sleek and user-friendly interface, Lesshopy provides an intuitive shopping experience for customers while offering powerful features for store owners to manage their products and orders efficiently.</p>
+                    </div>
+                </div>
+                <a class="text-white" href="https://lesshopy.netlify.app/">Visit Lesshopy</a>
             </div>
-            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="md:w-36 w-24 md:mb-5 mb-2" src="https://lesshopy.com/wp-content/uploads/2022/12/Price_less_quality_best__4_-removebg-preview-e1672406566353.png" alt="">
-                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://lesshopy.com/">Lesshopy</a></p>
+            <div class="text-center">
+                <div class="coding-items gradient-generator mb-2 bg-[#1f1f1f] p-2 items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <div class="overlay">
+                        <h3 class="uppercase text-[#c8f31d] hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://gradientgenerator.dheeru.org/">Gradient Generator</a></h3>
+                        <p class="text-white ">The Gradient Generator is a dynamic web application designed to empower users to effortlessly create stunning gradient backgrounds for their projects. Developed using HTML, CSS, and JavaScript, this tool offers an intuitive interface that allows users to customize gradients to their exact specifications with ease.</p>
+                    </div>
+                </div>
+                <a class="text-white" href="https://gradientgenerator.dheeru.org/">Visit Gradient Generator</a>
             </div>
-            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="md:w-14 w-11 md:mb-5 mb-2" src="images/tailwind.png" alt="">
-                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://drmahaveerdanigond.in/">Dr. Mahaveer Danigond</a></p>
+            <div class="text-center">
+                <div class="coding-items todos mb-2 bg-[#1f1f1f] p-2 items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <div class="overlay">
+                        <h3 class="uppercase text-[#c8f31d] hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://todos.dheeru.org/">Todo App</a></h3>
+                         <p class="text-white ">Simple Todo is a lightweight and intuitive todo list web app designed to help users organize their tasks effortlessly. Built using HTML, CSS, and JavaScript, and I am using local storage to save all Todos, SimpleTodo offers a clean and user-friendly interface that prioritizes simplicity and functionality.</p>
+                    </div>
+                </div>
+                <a class="text-white" href="https://todos.dheeru.org/">Visit DR Todos</a>
             </div>
-            <div class="bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://dcitsolutions.org/wp-content/uploads/2023/04/DC-IT-Logo-Transparent-2.png" alt="">
-                <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://dcitsolutions.org/">DC IT Solutions</a></p>
+            <div class="text-center">
+                <div class="coding-items tictactoe mb-2 bg-[#1f1f1f] p-2 items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
+                    <div class="overlay">
+                        <h3 class="uppercase text-[#c8f31d] hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://tictactoe.dheeru.org/">Tic Tac Toe</a></h3>
+                        <p class="text-white ">Introducing my Tic Tac Toe game, a classic and timeless diversion brought to life with modern web technologies. With HTML, CSS, and JavaScript, I've crafted a sleek and intuitive interface that allows players to engage in the age-old battle for three-in-a-row supremacy.  And I hosted it on Hostinger with Custom Domain.</p>
+                    </div>
+                </div>
+                <a class="text-white" href="https://tictactoe.dheeru.org/">Visit Tic Tac Toe</a>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- wordpress project section start here  -->
     <section class="bg-[url('./images/projctbg.jpg')] bg-fixed bg-cover bg-no-repea">
@@ -398,24 +322,8 @@
                     <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://drmahaveerdanigond.in/">Dr. Mahaveer Danigond</a></p>
                 </div>
                 <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                    <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://dcitsolutions.org/wp-content/uploads/2023/04/DC-IT-Logo-Transparent-2.png" alt="">
-                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://dcitsolutions.org/">DC IT Solutions</a></p>
-                </div>
-                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                    <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://hgdripirrigation.com/wp-content/uploads/2023/02/Drip-Irrigation-2-e1677315443311.png" alt="">
-                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://hgdripirrigation.com/">HG Drip Irrigation</a></p>
-                </div>
-                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
                     <img class="md:w-32 w-20 md:mb-5 mb-2" src="https://sancare.co.in/wp-content/uploads/2023/07/suncare-1-e1689848528146.png" alt="">
                     <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://sancare.co.in/">Sancare</a></p>
-                </div>
-                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                    <img class="md:w-40 w-20 md:mb-5 mb-2" src="https://protechacademy.net/wp-content/uploads/2023/01/LOGO-2.png" alt="">
-                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://protechacademy.net/">Protech Computer Academy</a></p>
-                </div>
-                <div class="wp-project-container bg-[#1f1f1f] p-2 w-[170px] md:w-[320px] md:h-[200px] h-[100px] items-center flex flex-col justify-center rounded-2xl shadow hover:shadow-md shadow-[#c8f31d]/50 border-solid border-[1px] border-gray-700 border-opacity-70 hover:border-[#c8f31d] hover:border-2">
-                    <img class="md:w-14 w-11 md:mb-5 mb-2" src="https://indiaatoday.com/wp-content/uploads/2023/11/Untitled-design-2-e1699769473137.png" alt="">
-                    <p class="uppercase text-white hover:text-[#c8f31d] md:text-xl text-[12px] text-center font-bold"><a target="_blank" href="https://indiaatoday.com/">Indiaa Today</a></p>
                 </div>
             </div>
         </div>
@@ -509,11 +417,11 @@
                 <p class="text-white text-xl font-bold  my-7">Address</p>
                 <div class="flex mb-4">
                     <i class="fa-solid fa-location-dot text-[#c8f31d] text-2xl mr-5"></i>
-                    <p class="text-gray-400">35 Nonar Shahpur Pawanr, Mallawan, Hardoi</p>
+                    <p class="text-gray-400">35, Nonar, Shahpur Pawanr, Mallawan, Hardoi</p>
                 </div>
                 <div class="flex mb-4">
                     <i class="fa-solid fa-envelope text-[#c8f31d] text-2xl mr-5"></i>
-                    <p class="text-gray-400">support@evtn.org</p>
+                    <p class="text-gray-400">contact@dheeru.org</p>
                 </div>
                 <div class="flex mb-5">
                     <i class="fa-solid fa-phone-flip text-[#c8f31d] text-2xl mr-5"></i>
@@ -522,7 +430,7 @@
             </div>
         </section>
         <section class="flex flex-wrap md:justify-between justify-center items-center mx-2 md:mx-32 md:h-12 h-10">
-            <p class="text-gray-500">Copyright @2023</p>
+            <p class="text-gray-500">Copyright @2024</p>
             <div class="text-gray-500 hidden md:block">
                 <a class="mx-2 md:mx-5" href="https://facebook.com/dheerurajpootofficial">Facebook</a>
                 <a class="mx-2 md:mx-5" href="https://twitter.com/DheeruRajpoot3">Twitter</a>
