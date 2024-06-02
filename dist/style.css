@@ -125,6 +125,7 @@
     overflow: hidden;
     border-radius: 20px;
     padding: 15px;
+    cursor: pointer;
   }
   .cart-body{
     z-index: 2;
@@ -163,6 +164,7 @@
     color: black;
     background: #c3f81d;
   }
+  
   .card::before {
     content: '';
     position: absolute;
@@ -186,7 +188,7 @@
   .card::after {
     content: '';
     position: absolute;
-    background: black;
+    background: #1f1f1f;
     inset: 5px;
     border-radius: 15px;
   }  
@@ -194,7 +196,82 @@
     background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
     animation: rotBGimg 3.5s linear infinite;
   }
+  .card:hover{
+    background: chocolate;
+  }
   
+  /* service Box start here */
+
+  .service-container{
+    width: 75%;
+    margin: 50px auto;
+}
+
+.service-container h2{
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 42px;
+    margin-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service-container .services{
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+.service-container .services .service-card{
+    width: 30%;
+    text-align: center;
+    background: #222;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-container .services .service-card:hover{
+    background: chocolate;
+}
+
+.service-container .services .service-card .content{
+    transition: 0.3s;
+}
+
+.service-container .services .service-card:hover .content{
+    transform: scale(1.07);
+}
+
+.service-container .services .service-card .content .icon{
+    padding: 5px 0;
+    color: white;
+}
+
+.service-container .services .service-card .content .icon i{
+    font-size: 40px;
+}
+
+.service-container .services .service-card:hover .content .title{
+    color: white;
+}
+
+.service-container .services .service-card .content .title{
+    padding: 5px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: chocolate;
+    transition: 0.3s;
+}
+.service-card p{
+  color: #e2e5e9;
+}
   
   @media screen and (max-width: 700px){
     .header-nav{
@@ -229,6 +306,15 @@
     }
     .wordpress-projects h2{
       font-size: 22px;
+    }
+    .services{
+      flex-direction: column;
+    }
+    .service-container .services .service-card{
+      width: 100%;
+    }
+    .service-container h2{
+      font-size: 25px;
     }
   }
   @media only screen and (max-width: 400px) and (min-width: 350px)  {
